@@ -1,0 +1,603 @@
+import flet as ft
+import flet.canvas as cv
+from flet_core.colors import BLACK, ORANGE, ORANGE_200, BLACK12, BLACK87
+from pygments.styles.gh_dark import BLUE_1
+
+
+
+
+def clickLA(e):
+    Ja9.bgcolor = ORANGE_200
+    Ja9.content.value = Ja.content.value
+    Ja9.update()
+    Ja2.content.value = ""
+    Ja2.bgcolor = None
+    Ja2.update()
+    Ja.bgcolor = None
+    Ja.content.value = ""
+    Ja.update()
+
+def clickBost(e):
+    Ja9.bgcolor = ORANGE_200
+    Ja9.content.value = Ja2.content.value
+    Ja9.update()
+    Ja2.content.value = ""
+    Ja2.bgcolor = None
+    Ja2.update()
+    Ja.bgcolor = None
+    Ja.content.value = ""
+    Ja.update()
+
+def clickNY(e):
+    Ja3.bgcolor = None
+    Ja3.content.value = ""
+    Ja3.update()
+    Ja4.content.value = ""
+    Ja4.bgcolor = None
+    Ja4.update()
+    Ja10.bgcolor = ORANGE_200
+    Ja10.content.value = "NY Knicks"
+    Ja10.update()
+
+def clickBrook(e):
+    Ja3.bgcolor = None
+    Ja3.content.value = ""
+    Ja3.update()
+    Ja4.content.value = ""
+    Ja4.bgcolor = None
+    Ja4.update()
+    Ja10.bgcolor = ORANGE_200
+    Ja10.content.value = "Brooklyn Nets"
+    Ja10.update()
+
+def clickGold(e):
+    Ja5.bgcolor = None
+    Ja5.content.value = ""
+    Ja5.update()
+    Ja6.content.value = ""
+    Ja6.bgcolor = None
+    Ja6.update()
+    Ja11.bgcolor = ORANGE_200
+    Ja11.content.value = "Golden State Warriors"
+    Ja11.update()
+
+def clickChicago(e):
+        Ja5.bgcolor = None
+        Ja5.content.value = ""
+        Ja5.update()
+        Ja6.content.value = ""
+        Ja6.bgcolor = None
+        Ja6.update()
+        Ja11.bgcolor = ORANGE_200
+        Ja11.content.value = "Chicago Bulls"
+        Ja11.update()
+
+
+def clickCleve(e):
+    Ja7.bgcolor = None
+    Ja7.content.value = ""
+    Ja7.update()
+    Ja8.content.value = ""
+    Ja8.bgcolor = None
+    Ja8.update()
+    Ja12.bgcolor = ORANGE_200
+    Ja12.content.value = "Cleveland Cavaliers"
+    Ja12.update()
+
+def clickCharl(e):
+    Ja7.bgcolor = None
+    Ja7.content.value = ""
+    Ja7.update()
+    Ja8.content.value = ""
+    Ja8.bgcolor = None
+    Ja8.update()
+    Ja12.bgcolor = ORANGE_200
+    Ja12.content.value = "Charlotte Hornets"
+    Ja12.update()
+
+
+
+def clickM2(e):
+    Ja13.bgcolor = ORANGE_200
+    Ja13.content.value = Ja9.content.value
+    Ja13.update()
+    Ja9.bgcolor = None
+    Ja9.content.value = ""
+    Ja9.update()
+
+
+def clickM2k(e):
+    Ja14.content.value = Ja9.content.value
+    Ja14.bgcolor = ORANGE_200
+    Ja14.update()
+    Ja9.bgcolor = None
+    Ja9.content.value = ""
+    Ja9.update()
+
+def clickM2n(e):
+    Ja15.content.value = Ja10.content.value
+    Ja15.bgcolor = ORANGE_200
+    Ja15.update()
+    Ja10.bgcolor = None
+    Ja10.content.value = ""
+    Ja10.update()
+
+def clickM2g(e):
+    Ja16.content.value = Ja11.content.value
+    Ja16.bgcolor = ORANGE_200
+    Ja16.update()
+    Ja11.bgcolor = None
+    Ja11.content.value = ""
+    Ja11.update()
+
+def clickM2c(e):
+    Ja17.content.value = Ja12.content.value
+    Ja17.bgcolor = ORANGE_200
+    Ja17.update()
+    Ja12.bgcolor = None
+    Ja12.content.value = ""
+    Ja12.update()
+
+def clickCHAMP(e):
+    JaCHAMP.content.value = Ja13.content.value
+    JaCHAMP.bgcolor = ORANGE_200
+    JaCHAMP.update()
+    Ja13.content.value = ""
+    Ja13.bgcolor = None
+    Ja13.update()
+    JaCHAMP.content.value = Ja15.content.value
+    JaCHAMP.bgcolor = ORANGE_200
+    JaCHAMP.update()
+    Ja15.content.value = ""
+    Ja15.bgcolor = None
+    Ja15.update()
+    JaCHAMP.content.value = Ja16.content.value
+    JaCHAMP.bgcolor = ORANGE_200
+    JaCHAMP.update()
+    Ja16.content.value = ""
+    Ja16.bgcolor = None
+    Ja16.update()
+    JaCHAMP.content.value = Ja17.content.value
+    JaCHAMP.bgcolor = ORANGE_200
+    JaCHAMP.update()
+    Ja17.content.value = ""
+    Ja17.bgcolor = None
+    Ja17.update()
+
+
+
+
+
+
+
+Ja =  ft.Container(
+                    content=ft.Text("LA Lakers",color=BLACK),
+                   left=0,
+                    top=0,
+                    bgcolor=ft.colors.ORANGE_200,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickLA,
+)
+
+JaLakers =  ft.Container(
+                    content=ft.Text("",color=BLACK),
+                   left=340,
+                    top=30,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2,
+)
+
+
+
+
+Ja2 =  ft.Container(
+                    content=ft.Text("Boston Celtics", color=BLACK),
+                   left=0,
+                    top=70,
+                    bgcolor=ft.colors.ORANGE_200,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickBost,
+)
+
+JaCeltics =  ft.Container(
+                    content=ft.Text("",color=BLACK),
+                   left=340,
+                    top=30,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2,
+)
+
+Ja3 = ft.Container(
+                    content=ft.Text("NY Knicks", color=BLACK),
+                   left=0,
+                    top=140,
+                    bgcolor=ft.colors.ORANGE_200,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickNY
+)
+
+JaNY = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=340,
+                    top=175,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2n
+)
+
+Ja4 =  ft.Container(
+                     content=ft.Text("Brooklyn Nets " , color=BLACK),
+                    left=0,
+                    top=210,
+                    bgcolor=ft.colors.ORANGE_200,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickBrook
+)
+
+Ja5 = ft.Container(
+                    content=ft.Text("Golden State Warriors ", color=BLACK),
+                    left=0,
+                    top=280,
+                    bgcolor=ft.colors.ORANGE_200,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickGold,
+)
+
+JaGold = ft.Container(
+                    content=ft.Text(" ", color=BLACK),
+                    left=340,
+                    top=320,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2g,
+)
+
+Ja6 = ft.Container(
+                    content=ft.Text(" Chicago Bulls ", color=BLACK),
+                    left=0,
+                    top=350,
+                    bgcolor=ft.colors.ORANGE_200,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickChicago,
+)
+
+JaCL = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=340,
+                    top=450,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2c
+)
+
+Ja7 = ft.Container(
+                    content=ft.Text("Cleveland Cavaliers ", color=BLACK),
+                    left=0,
+                    top=420,
+                    bgcolor=ft.colors.ORANGE_200,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickCleve,
+)
+
+Ja8 = ft.Container(
+                        content=ft.Text("Charlotte Hornets ", color=BLACK),
+                    left=0,
+                    top=490,
+                    bgcolor=ft.colors.ORANGE_200,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickCharl,
+)
+
+Ja9 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=340,
+                    top=30,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickLA,
+)
+
+Ja10 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=340,
+                    top=175,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickNY,
+)
+
+Ja11 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=340,
+                    top=320,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickGold,
+)
+
+Ja12 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=340,
+                    top=450,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickCleve,
+)
+
+
+Ja13 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=600,
+                    top=95,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2,
+)
+
+Ja14 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=600,
+                    top=95,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2k,
+)
+
+Ja15 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=600,
+                    top=95,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2n
+)
+
+Ja16 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=600,
+                    top=385,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2g
+)
+
+Ja17 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=600,
+                    top=385,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickM2c
+)
+
+JaCHAMP = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=950,
+                    top=225,
+                    width=140,
+                    height=50,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickCHAMP
+)
+Ja18 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=600,
+                    top=95,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickCHAMP
+)
+Ja19 = ft.Container(
+                    content=ft.Text("", color=BLACK),
+                   left=600,
+                    top=385,
+                    width=100,
+                    height=25,
+                    border_radius=0,
+                    ink=True,
+                    on_click=clickCHAMP
+)
+def main(page: ft.Page):
+
+
+
+
+    st = ft.Stack(
+            [
+                ft.Image(
+                    src=f"ball.jpg",
+                    width=1400,
+                    height=800,
+                    fit=ft.ImageFit.CONTAIN,
+                ),
+                ft.Row(
+                    [
+                        ft.Text(
+                            "Basketboll tournament",
+                            color="white",
+                            size=40,
+                            opacity=0.5,
+                        )
+                    ],
+                    alignment=ft.MainAxisAlignment.CENTER,
+                ),
+                cv.Canvas(
+                    width=150,
+                    height=100,
+                    shapes=[
+                        cv.Line(100, 10, 300, 10,
+                                paint=ft.Paint("white")),
+                        cv.Line(100, 80, 300, 80,
+                                paint=ft.Paint("white")),
+                        cv.Line(300, 10, 300, 80,
+                                paint=ft.Paint("white")),
+                        cv.Line(300, 45, 500, 45,
+                                paint=ft.Paint("white")),
+                        cv.Line(500, 45, 500, 190,
+                                paint=ft.Paint("white")),
+                        cv.Line(500, 110, 800, 110,
+                                paint=ft.Paint("white")),
+                        cv.Line(100, 295, 300, 295,
+                                paint=ft.Paint("white")),
+                        cv.Line(100, 365, 300, 365,
+                                paint=ft.Paint("white")),
+                        cv.Line(300, 295, 300, 365,
+                                paint=ft.Paint("white")),
+                        cv.Line(300, 335, 500, 335,
+                                paint=ft.Paint("white")),
+                        cv.Line(500, 335, 500, 400,
+                                paint=ft.Paint("white")),
+                        cv.Line(100, 150, 300, 150,
+                                paint=ft.Paint("white")),
+                        cv.Line(300, 150, 300, 220,
+                                paint=ft.Paint("white")),
+                        cv.Line(100, 220, 300, 220,
+                                paint=ft.Paint("white")),
+                        cv.Line(300, 190, 500, 190,
+                                paint=ft.Paint("white")),
+                        cv.Line(500, 190, 500, 190,
+                                paint=ft.Paint("white")),
+                        cv.Line(100, 430, 300, 430,
+                                paint=ft.Paint("white")),
+                        cv.Line(100, 500, 300, 500,
+                                paint=ft.Paint("white")),
+                        cv.Line(300, 430, 300, 500,
+                                paint=ft.Paint("white")),
+                        cv.Line(300, 465, 500, 465,
+                                paint=ft.Paint("white")),
+                        cv.Line(500, 465, 500, 400,
+                                paint=ft.Paint("white")),
+                        cv.Line(500, 400, 800, 400,
+                                paint=ft.Paint("white")),
+                        cv.Line(800, 400, 800, 110,
+                                paint=ft.Paint("white")),
+                        cv.Line(800, 250, 1250, 250,
+                                paint=ft.Paint("white")),
+                ]),
+
+
+
+                Ja,
+
+               Ja2,
+
+                Ja3,
+
+              Ja4,
+
+                Ja5,
+
+                Ja6,
+
+                Ja7,
+
+                Ja8,
+
+                Ja9,
+
+                Ja10,
+
+                Ja11,
+
+                Ja12,
+
+                Ja13,
+
+                Ja14,
+
+                JaLakers,
+
+                JaCeltics,
+
+                JaNY,
+
+                Ja15,
+
+                Ja16,
+
+                JaGold,
+
+                JaCL,
+
+                Ja17,
+
+                JaCHAMP,
+
+                Ja18,
+
+                Ja19
+
+
+
+
+            ],
+
+
+        )
+    page.add(st)
+    page.update()
+
+
+
+
+
+
+
+ft.app(main)
